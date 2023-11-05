@@ -1,0 +1,29 @@
+.content_column{
+    float: left;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+
+    }
+
+    .content_middle{
+        width: 1000px;
+        height: 700px;
+        padding: 20px;
+        border: 5px solid aqua;
+        border-radius: 10px;
+        background-color: silver;
+    }
+
+    h1.Project_Title{
+    font-family: 'IM Fell English', serif;
+    font-family: 'Merienda', cursive;
+  }
+ 
+ p{
+
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'IM Fell English', serif;
+    font-family: 'Merienda', cursive;
+
+  }

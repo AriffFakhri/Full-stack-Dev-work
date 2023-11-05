@@ -1,0 +1,172 @@
+*{
+   
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 100px;
+}
+.container1{
+    background: radial-gradient(circle, rgb(38, 139, 143) 0%, rgb(138, 135, 160) 100%);
+    height: 65px;
+}
+
+.Home-table{
+    border-collapse: collapse;
+    width: 1000px;
+    margin: 50px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 50px;
+    border-color:black;
+    border-radius: 50px;
+  
+}
+.title{
+    font-size: 50px;
+    background: -webkit-linear-gradient(#7d7c9e, #9f80e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    padding: 30px;
+    text-align:center;
+    letter-spacing: 10px;
+    
+    
+}
+
+
+nav ul li{
+    display: inline-block;
+    overflow:hidden;
+    
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    margin-left: 200px;
+}
+
+nav {
+    
+    position: relative;
+    top: 50;
+    width: 100;
+    justify-content: center;
+}
+
+
+
+/*I want the hover seperately*/
+
+/* nav ul li a:hover{
+    cursor:pointer;
+    margin-top: 15px;
+} */
+
+
+.btn{
+    height:5vh;
+    width: 20vh;
+    font-size: 25px;
+    background-color: var(--background-color);
+    outline:none;
+    position: relative;
+    cursor: pointer;
+    
+
+    --background-color:#d3a8a8;
+    --border-size: 2px;
+}
+
+.btn.btn-border-pop::before{
+    content: '';
+    position:absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    border: var(--border-size) solid var(--background-color);
+    transition: top left, right, bottom, 100ms ease-in-out;
+}
+
+.btn.btn-border-pop:hover::before,.btn.btn-border-pop:focus::before{
+    top:calc(var(--border-size)* -2);
+    left:calc(var(--border-size)* -2);
+    right:calc(var(--border-size)* -2);
+    bottom:calc(var(--border-size)* -2);
+}
+
+
+
+
+
+
+
+
+.circle1{
+    width:100px;
+    height:100px;
+    position: relative;
+    background-color: aqua;
+    animation-name: animation1;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 150px;
+}
+/* .circle2{
+    width:100px;
+    height:20px;
+    position: relative;
+    background-color: aqua;
+    animation-name: animation2;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 150px;
+    
+}
+.circle3{
+    width:100px;
+    height:20px;
+    position: relative;
+    background-color: aqua;
+    animation-name: animation3;
+    animation-duration: 20s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 150px;
+}
+     */
+
+
+
+@keyframes animation1{
+        0%{background-color: blueviolet; left:0px; top:0px;}
+        20%{background-color: rgb(9, 102, 114);left:0px; top:200px;}
+        60%{background-color: rgb(94, 7, 7);left:0px; top:300px;}
+        80%{background-color: rgb(170, 180, 27);left:0px; top:400px;}
+        90%{background-color: rgb(7, 117, 57);left:0px; top:500px;}
+    }
+
+/* @keyframes animation2{
+        0%{background-color: blueviolet; left:0px; top:0px;}
+        20%{background-color: rgb(9, 102, 114);left:0px; top:200px;}
+        60%{background-color: rgb(94, 7, 7);left:0px; top:300px;}
+        80%{background-color: rgb(170, 180, 27);left:0px; top:500px;}
+        90%{background-color: rgb(7, 117, 57);left:0px; top:800px;}
+    }
+
+@keyframes animation3{
+        0%{background-color: blueviolet; left:0px; top:100px;}
+        20%{background-color: rgb(9, 102, 114);left:0px; top:200px;}
+        60%{background-color: rgb(94, 7, 7);left:0px; top:300px;}
+        80%{background-color: rgb(170, 180, 27);left:0px; top:500px;}
+        90%{background-color: rgb(7, 117, 57);left:0px; top:600px;}
+    } */

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio</title>
+    <link rel="icon" href="genetic-data-svgrepo-com.svg" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+       
+       .content_container{
+
+        margin: 100px 0px 0px 200px;
+
+       }
+             
+        td:hover{
+        background-color: blueviolet;
+        color: bisque;
+        cursor: pointer;
+        
+      }
+
+     
+    .grid-container {
+         display: grid;
+         grid-template-columns: auto auto auto;
+        gap: 10px;
+         background-color: #2196F3;
+        padding: 10px 10px 10px 10px;
+    }
+
+    
+    @media(max-width:800px){
+        .grid-container{
+        background-color:chocolate;
+        }
+    }
+    .grid-container > div {
+     background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+      padding: 20px 0;
+    font-size: 30px;
+    }
+
+    .item1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+
+    }
+
+    .Groupphoto{
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+
+    }
+    
+    .heading_title{
+        font-size: 75px; 
+        color: solid black; 
+        font-style:oblique;
+        margin-left: 730px;
+        margin-bottom: 20px;
+
+    }
+
+    .heading_style{
+
+        font-size: 50px; 
+        color: solid black; 
+        font-style:oblique;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    
+
+        </style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">The Portfolio About Three of us</h1>
+    </div>   
+    <div class="container1">
+        <nav>
+            <ul>
+                <ul>
+                    <li><a href="index.html"><button id="home" class="btn btn-border-pop">Home</button></a></li>
+                    <li><a href="Project_page.html"><button id="project" class="btn btn-border-pop">Project</button></a></li>
+                    <li><a href="about_us.html"><button id="about" class="btn btn-border-pop">About Us</button></a></li>
+                    <li><a href="contact_us_page.html"><button id="contact" class="btn btn-border-pop">Contact US</button></a></li>
+                </ul>
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <!-- <div class="circle3"></div> -->
+    <div class="circle4"></div>
+
+    <div class="content_container">
+        
+        <h1 class="heading_title"> Special Thanks</h1>
+        <div class="grid-container">
+          
+            <div class="item1"><img class="Groupphoto" src="Group photo.jpg" alt="Group Photo" height="300px" width="200px">
+                <br>
+                <h3>Full Stack Developer Group Photo</h3>
+            </div>
+            
+            <div class="item2"><a href="https://www.linkedin.com/in/dr-harjinthar-singh/" target="_blank">
+                <img src="Dr. Harjinthar Singh.jpeg" alt="dr-harjinthar-singh" height="200px" width="200px"></a></div>
+            <div class="item3"><h1 class="heading_style">Dr Harjinthar Singh</h1></div>  
+            
+            <div class="item4"><a href="https://www.linkedin.com/in/samraiz-bhatti-70a79a232/" target="_blank">
+                <img src="Sam.jpg" alt="Samraiz Bhatti" height="200px" width="200px"></a>
+            </div>
+
+            <div class="item5"><h1 class="heading_style">IT trainer Samraiz Bhatti</h1></div>
+          
+          </div>
+          
+
+    </div>
+
+</body>
+</html>

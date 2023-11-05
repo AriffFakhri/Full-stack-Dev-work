@@ -1,0 +1,74 @@
+.projectcontent_container{
+    display: block;
+    margin: 50px 0px 0px 300px;
+}
+
+.grid_container_content_list{
+
+display: grid;
+gap: 50px;
+grid-template-columns: auto auto auto;
+background-color: lightblue;
+padding: 10px;
+border: 2px solid blanchedalmond;
+border-radius: 5px;
+
+}
+
+.grid_item_Project_contentlist{
+
+background-color: white;
+border: 1px solid yellow;
+padding: 20px;
+font-size: 30px;
+text-align: center;
+border: 3px solid yellowgreen;
+border-radius: 5px;
+
+}
+
+.content_list{
+
+display: flex;
+background-color: skyblue;
+padding: 20px;
+width: 300px;
+left: 100px;
+border: 5px solid silver;
+border-radius: 25px;
+
+
+}
+
+.Project_Title{
+margin: 10px 10px 0px 10px;
+padding: 10px;
+font-style: italic;
+font-family: 'Times New Roman', Times, serif;
+font-size: 30px;
+
+}
+
+.Project_content{
+margin: 10px 10px 10px 10px;
+padding: 10px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 30px;
+width: 300px;
+flex: 3;
+}
+
+.grid_item_Project_content{
+
+    background-color: white;
+    border: 5px double black;
+    border-spacing: 10px;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    
+
+
+
+}

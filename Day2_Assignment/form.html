@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+    <body>
+        <a href="index.html"><button id="contact" class="btn btn-border-pop">Back to Homepage</button></a></li>
+        <h1 class="reg_form">The Enquiry Form</h1>
+        <p class="require">Please fill out this form with the required details in order to contact us</p>
+        <form action="" class="form">
+            <fieldset>
+                <label for="sur_name">Enter Your Surname:</label> <input type="text" id="surname" required/>
+                <label for="last_name">Enter Your Last Name:</label> <input type="text" id="lastname" required/>
+                <p> Select Your Gender</p>
+                <label for="male"><input type="radio" id="male" class="inline" name="gender" checked>Male</label>
+                <label for="female"><input type="radio" id="female" class="inline" name="gender">Female</label>
+                <label for="not_to_say"><input type="radio" id="not_to_say" class="inline" name="gender">Prefer Not To Say</label>
+                <br>
+                <label for="email">Enter Your Email Address:</label> <input type="email" id="email" required/>
+                <label for="tel">Enter Your Contact Number:</label> <input type="text" id="tel" required/>
+                <label for="last_name">Enter Your country:</label> <input type="country" id="country" required/>
+            </fieldset>
+            <fieldset>
+                <fieldset>
+                    <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
+                    <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
+                    <label for="referrer">How did you hear about us?
+                        <select id="referrer" name="referrer">
+                        <option value="#" disabled selected>(select one)</option>
+                        <option value="1">Facebook</option>
+                        <option value="2">YouTube Channel</option>
+                        <option value="3">Instagram</option>
+                        <option value="4">Other</option>
+                        </select>
+                    </label>
+            </fieldset>
+            <label for="bio">Tell Us:
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Why you want to contact us..."></textarea>
+              </label>
+            </fieldset>
+            <label for="terms-and-conditions">
+              <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="">terms and conditions</a>
+            </label>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

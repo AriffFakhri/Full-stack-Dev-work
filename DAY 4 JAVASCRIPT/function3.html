@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function3</title>
+</head>
+<body>
+
+        <form>
+            <label>Enter 10, 20 or 30</label>
+            <input type="text" id="a1"> <br>
+            <br>
+            <button onclick="show()">check</button>
+            <div id="show"></div>
+        </form>
+
+        <script>
+            function show(){
+                var num;
+                Num = document.getElementById("a1").value;
+                if(num === 10){
+                    document.getElementById("show").innerHTML = "You entered the number" + num;
+                }else if(num === 20){
+                    document.getElementById("show").innerHTML = "You entered the number" + num;
+                }else if(num === 30){
+                document.getElementById("show").innerHTML = "You entered the number" + num;
+                }else{
+                    alert("Please enter the correct answer")
+                }
+            }
+        </script>
+    
+</body>
+</html>

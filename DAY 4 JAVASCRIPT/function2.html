@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function2</title>
+</head>
+<body>
+    <center>
+    <form>
+        <label> Enter you username or phone</label>
+        <input type="text" id="a1"> <br>
+        <label>Enter Your Password</label> 
+        <input type="text" id="a2"> <br>
+        <br>
+        <button onclick="info()">login</button>
+    </form>
+
+        <script>
+            function info(){
+                var user, pass;
+                user = document.getElementById("a1").value;
+                pass = document.getElementById("a2").value;
+                if((user == "admin" || user == 12345) && pass == "malaysia123" ){
+                    window.open("login.html")
+                }else{
+                    alert("Please enter you correct details")
+                }
+            }
+        </script>
+    </center>
+</body>
+</html>

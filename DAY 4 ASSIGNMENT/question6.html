@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global and local variable</title>
+</head>
+<body>
+    <script>
+        
+        function check(){
+           var a=5; //local variable
+           window.a=10;//global variable
+           document.write("This is local variable -> "+a +"<br>");
+           document.write("This is global variable -> "+window.a);
+        }
+        check();
+
+        //so this shows that even the global and local variable share the same name but they do not effect each other
+    
+    </script>
+    
+</body>
+</html>

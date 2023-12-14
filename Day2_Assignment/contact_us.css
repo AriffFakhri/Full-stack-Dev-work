@@ -1,0 +1,22 @@
+.contact_us_container{
+    float: left;
+    padding: 10px;
+    margin-left: 300px;
+    background-color: black;
+    border-radius: 10px;
+
+    }
+
+    .contact_us_form{
+        width: 1000px;
+        height: 1250px;
+        padding: 20px;
+        border: 5px solid aqua;
+        border-radius: 10px;
+        background-color: #232250;
+    }
+
+    h1.Project_Title{
+    font-family: 'IM Fell English', serif;
+    font-family: 'Merienda', cursive;
+  }

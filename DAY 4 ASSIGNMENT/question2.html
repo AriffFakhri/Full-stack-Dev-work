@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <label for="text1">Key in Anything</label>
+    <input type="text" id="text1">
+    <button onclick="count()">Count The Sentence</button>
+    <button onclick="upper()">Change To Uppercase Letter</button>
+    <br><br>
+    <input type="text" id="text2">
+    <button onclick="position()"> Find the sentence Position</button>
+
+</head>
+<body>
+    <script>
+        let text1, text2, textposition;
+            
+        function count() {
+            text = document.getElementById("text1").value;
+            var count = 0;
+            for (var i = 0; i < text.length; i++) {
+                count++;
+        }
+            document.write("The number of character =" + count);
+    }
+        function upper() {
+            text = document.getElementById("text1").value;
+            document.write(text.toUpperCase())
+        }
+
+        function position() {
+            text = document.getElementById("text1").value;
+            text2 = document.getElementById("text2").value;
+            document.write("The position for  "+ text1 +" is "+ text.indexOf(text2));
+
+        }
+    </script>
+</body>
+</html>

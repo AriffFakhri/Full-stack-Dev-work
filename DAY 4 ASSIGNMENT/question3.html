@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3 coersion</title>
+</head>
+<body>
+    <script>
+    var a =5, b =12 , c="20" , d=20, e =9;
+   
+    
+    document.write(a < b)
+    document.write("<br>")
+
+    document.write(b > c)
+    document.write("<br>")
+
+    document.write(c < b)
+    document.write("<br>")
+
+    document.write(d >= c) //true
+    document.write("<br>")
+
+    document.write(d == c) //true //comparing two variables, but it ignores the datatype of variable
+    document.write("<br>")
+
+    
+    //compare even the data type , strict compare 
+    document.write(d === c) //false //is used for comparing two variables, but this operator also checks datatype and compares two values
+    document.write("<br>")
+
+    document.write(d != c )
+    document.write("<br>")
+    
+    document.write(c == d && b != a)
+    document.write("<br>")
+
+    document.write(c <= d || a== d)
+    document.write("<br>")
+
+
+
+
+    </script>
+</body>
+</html>

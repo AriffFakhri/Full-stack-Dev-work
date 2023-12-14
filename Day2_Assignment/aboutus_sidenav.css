@@ -1,0 +1,20 @@
+ul.aboutus_sidebar_menu{
+    list-style-type: none;
+    margin-top: 100px;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+  }
+  
+  li.aboutus_content a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li.aboutus_content a:hover {
+    background-color: #555;
+    color: white;
+  }

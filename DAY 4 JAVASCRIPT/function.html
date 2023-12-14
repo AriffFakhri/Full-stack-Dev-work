@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=sc, initial-scale=1.0">
+    <title>function</title>
+
+</head>
+<center>
+    <form>
+    <label>Enter Your Nationality</label>
+    <input type="text" id="a1"> <br>
+    <label>Enter Your Age</label>
+    <input type="text" id="a2"> 
+    <br>
+    <button onclick="check()">check</button>
+
+    </form>
+</center>
+<body>
+    <script>
+        // function data() {
+        //     document.write("This is our First Function")
+        // }
+        // data() ;
+
+            function check() {
+                let nation, age;
+                nation = document.getElementById("a1").value;
+                age = document.getElementById("a2").value;
+                if(nation == "Malaysia" && age >= 18){
+                    alert("You are eligible to give the vote")
+                }else{
+                    alert("You are not eligible to give the vote")
+                }
+            }
+        
+
+
+    </script>
+</body>
+</html>

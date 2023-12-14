@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+    <center>
+    <form> 
+           <label>Enter Your First Number</label>  
+           <input type="text"id ="Num1"> <br><br> 
+           <label>Calculation</label>
+           <select id="Calc">
+           <option id="">Select Calculation </option>
+           <option value="add">+</option>
+           <option value="minus">-</option>
+           <option value="multi">* </option>
+           <option value="div">/</option>
+           </select><br><br>
+           <label>Enter Your Second Number</label>    
+           <input type="text"id ="Num2"> <br><br>
+           <button onclick="calcu()">Calculate</button>
+      
+    </form>
+</center> 
+        <script> 
+
+            function calcu(){
+            let  a1, b1, sum;
+            a1 = parseInt(document.getElementById("Num1").value);
+            b1 = parseInt(document.getElementById("Num2").value);
+            if(document.getElementById('Calc').value == "add"){
+                sum = a1 + b1;
+            };
+            if(document.getElementById('Calc').value == "minus"){
+                sum = a1 - b1;
+            };
+            if(document.getElementById('Calc').value == "multi"){
+                sum = a1 * b1;
+            };
+            if(document.getElementById('Calc').value == "div"){
+                sum = a1 / b1;
+            };
+            document.write("The answer is " + sum + ". <br><button onclick='ret()'>back</button>");
+
+    }
+        function ret() {
+        window.open("question1.html", "_self");
+            }
+
+        </script>
+</body>
+</html>

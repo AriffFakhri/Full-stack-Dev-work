@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Form>
+        <center>        
+         <label>Enter You Nationality</label>
+            <input type="text" id="N1"><br><br>
+        <label>Enter Your Age</label>
+            <input type="text" id="N2">
+        <br>
+            <button onclick="check()">Check</button>
+        </center>
+
+    </Form>
+</head>
+<body>
+    <script>
+        function check() {
+            let nation, age;
+            nation = document.getElementById("N1").value;
+            age = document.getElementById("N2").value;
+            if(nation == "Malaysia","indonesia" && age >= 18){
+            alert("You Are Eligible to Vote")
+            }else{
+            alert("You Are Not Eligible to Vote")
+            }
+        }
+
+    // function check() {
+    //             let nation, age;
+    //             nation = document.getElementById("a1").value;
+    //             age = document.getElementById("a2").value;
+    //             if(nation == "Malaysia" && age >= 18){
+    //                 alert("You are eligible to give the vote")
+    //             }else{
+    //                 alert("You are not eligible to give the vote")
+    //             }
+    //         }
+        
+       
+    // </script>
+    
+</body>
+</html>

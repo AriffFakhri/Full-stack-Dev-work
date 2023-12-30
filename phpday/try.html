@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> Employee Form</title>
+  <style>
+     body {
+      
+      background-color: #d17c7c;
+      margin: 0;
+      padding: 0;
+    }
+
+    center {
+      margin-top: 50px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form {
+      width: 50%;
+      margin: auto;
+      background-color: bisque;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: greenyellow;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <h2 style="font-size: 50px;"> <strong>Employee Form</strong> </h2>
+ 
+  <form action="/submit" method="post">
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+    </div>
+     <br>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+    </div>
+    <br>
+    <div class="form-group">
+     <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <br>
+    <div class="form-group">
+      <input type="submit" value="Submit">
+    </div>
+    <br>
+    </center>
+  </form>
+  
+
+</body>
+</html>

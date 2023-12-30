@@ -1,0 +1,17 @@
+<?php
+session_start();
+if ($_SERVER ["REQUEST_METHOD"] == "POST") {
+$loginOption = $_POST ["loginOption"];
+$loginField = $_POST ["loginField"];
+$password = $_POST ["password"];
+
+
+ 
+
+  // validate login credentials
+
+$loginOption = false;
+ if ($loginOption === "username" && $loginField === "sahmadx")
+
+
+?>
